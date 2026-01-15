@@ -4,7 +4,7 @@
 
 **A modern, interactive coding interview practice platform powered by AI, adding practical example.**
 
-[Report Bug](https://github.com/your-username/ai-interview-pro/issues) · [Request Feature](https://github.com/your-username/ai-interview-pro/issues)
+[Report Bug](https://github.com/your-username/ai-interview-coach/issues) · [Request Feature](https://github.com/your-username/ai-interview-coach/issues)
 
 </div>
 
