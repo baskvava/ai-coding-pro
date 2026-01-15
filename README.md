@@ -1,4 +1,4 @@
-# AI Interview Pro
+# AI Interview Coach
 
 <div align="center">
 
