@@ -6,7 +6,6 @@ import {
   Bot,
   Clock,
   Code2,
-  Cpu,
   FileText,
   MessageSquare,
   RefreshCw,
@@ -273,7 +272,7 @@ export const InterviewPage = ({
   const startStreaming = async (messagesPayload: ChatMessagePayload[]) => {
     try {
       // Call Next.js backend API (Server-to-Server to Ollama)
-      const res = await fetch("/api/stream-chat", {
+      const res = await fetch("/api/stream-chat/groq", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // Send the entire messages array directly
