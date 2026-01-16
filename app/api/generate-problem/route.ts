@@ -10,10 +10,6 @@ export async function POST(request: Request) {
       model: "qwen2.5",
       messages: [
         {
-          role: "system",
-          content: "You are a technical interviewer. Return JSON only.",
-        },
-        {
           role: "user",
           /**
            * @todo improve prompt engineering here
