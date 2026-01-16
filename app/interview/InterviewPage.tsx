@@ -28,8 +28,8 @@ import {
 import { LANGUAGES } from "./constants";
 import { SYSTEM_INSTRUCTIONS } from "@/ai.config";
 
-import { ChatMessage } from "./ChatMessage";
-import { CodeEditor } from "./CodeEditor";
+import { ChatMessage } from "./_components/ChatMessage";
+import { CodeEditor } from "./_components/CodeEditor";
 
 // --- API Helper (Direct Ollama call for non-streaming tasks) ---
 async function callOllama(

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { FONTS, LANGUAGES, THEMES } from "./constants";
+import { FONTS, LANGUAGES, THEMES } from "../constants";
 
 export const CodeEditor = ({
   code,

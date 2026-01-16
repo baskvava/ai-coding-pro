@@ -1,7 +1,7 @@
 "use client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { Message } from "./types";
+import { Message } from "../types";
 import { Bot } from "lucide-react";
 
 export const ChatMessage = ({ message }: { message: Message }) => {
