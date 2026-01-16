@@ -18,7 +18,7 @@ export const CodeEditor = ({
   const theme = THEMES[themeKey];
   const font = FONTS[fontKey];
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Tab") {
       e.preventDefault();
       const start = e.currentTarget.selectionStart;
@@ -59,7 +59,9 @@ export const CodeEditor = ({
         <textarea
           ref={textareaRef}
           value={code}
-          onChange={(e) => setCode(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+            setCode(e.target.value)
+          }
           onKeyDown={handleKeyDown}
           className="flex-1 bg-transparent p-4 outline-none resize-none leading-6 whitespace-pre transition-colors duration-300"
           spellCheck={false}
