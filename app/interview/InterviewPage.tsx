@@ -181,7 +181,7 @@ export const InterviewPage = ({
     ) => {
       try {
         // Call Next.js backend API (Server-to-Server to Ollama)
-        const res = await fetch("/api/generate-problem/groq", {
+        const res = await fetch("/api/generate-problem/content/groq", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           // Send the entire messages array directly

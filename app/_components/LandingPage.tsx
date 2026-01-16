@@ -144,13 +144,13 @@ export const LandingPage = ({
       try {
         const query = searchTerm;
 
-        const res = await fetch("/api/generate-problem", {
+        const res = await fetch("/api/generate-problem/list", {
           method: "POST",
           body: JSON.stringify({ query: query }),
         });
 
         const responseData = await res.json();
-
+        console.log("Search Response Data:", responseData);
         try {
           const data = JSON.parse(responseData.result);
 
